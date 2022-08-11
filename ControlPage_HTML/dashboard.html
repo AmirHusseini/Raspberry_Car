@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>STI - RaspberryPi IoT Vehicle</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/toastr.min.css" rel="stylesheet">
+	<link href="css/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">STI - RaspberryPi IoT Vehicle</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+        
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <main class="col" role="main">
+		
+<div class="container-fluid"
+			<div class="container-fluid">
+			
+          <h2 style="padding-top:15px;">Vehicle Movements</h2>
+		  <p>Control the Vehicle by pressing below buttons</p>
+		  <hr />
+		  <div class="row">
+			<div class="col text-center">
+			  <!--<img id="streamimg" class="img-responsive img-rounded" src= "http://192.168.0.50:8081?action=stream" />-->
+			</div>
+			</div>
+			<div class="row" style="padding-top:20px;">
+				<div class="col">
+				</div>
+				<div class="col"><button onclick="Forward()" type="button" class="btn btn-primary w-100">Forward</button>
+				</div>
+				<div class="col">
+				</div>
+			</div>
+			<div class="row" style="padding-top:20px;">
+				<div class="col"><button onclick="Left()" type="button" class="btn btn-primary w-100">Left</button>
+				</div>
+				<div class="col"><button onclick="pivot_left()" type="button" class="btn btn-danger w-100">Pivot Left</button>
+				</div>
+				<div class="col"><button onclick="pivot_right()" type="button" class="btn btn-danger w-100">Pivot Right</button>
+				</div>
+				<div class="col"><button onclick="Right()" type="button" class="btn btn-primary w-100">Right</button>
+				</div>
+			</div>
+			<div class="row" style="padding-top:20px;">
+				<div class="col">
+				</div>
+				<div class="col"><button onclick="Reverse()" type="button" class="btn btn-primary w-100">Reverse</button>
+				</div>
+				<div class="col">
+				</div>
+			</div>
+	
+
+			<h2 style="padding-top:15px;">Sensor Data</h2>
+			<p>Get the sensor reading in cms</p>
+			<hr/>
+			<div class="row" style="padding-top:20px;">
+				<div class="col">
+				</div>
+				<div class="col"><button onclick="FrontSensor()" type="button" class="btn btn-info w-100">Front Sensor Reading</button>
+				</div>
+				<div class="col">
+				</div>
+			</div>
+			
+			</div>
+			</div>
+		</div>
+             
+        </main>
+      </div>
+	  
+	      <div class="container-fluid">
+      <div class="row">
+        <main class="col" role="main" style="background:black; margin-top:50px; color:white;padding-left:20px;">
+			<div>Execution Logs:
+			</div>
+		<div id="response"  style="height:200px;overflow-y:auto;">
+		</div>
+		  </main>
+      </div>
+	  			
+	  </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster 
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js.download"></script>
+    <script src="js/bootstrap.min.js.download"></script>
+	<script src="js/toastr.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js.download"></script>
+	<!--<script src="js/global.js"></script>
+    <script src="js/custom.js"></script>-->
+
+</body></html>
